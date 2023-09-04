@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Backpack Organizer</title>
+  </head>
+  <body>
+    <h1>Backpack Organizer</h1>
+    <div class="capacity">
+      <label for="smallCapacity">Small Capacity:</label>
+      <input type="number" id="smallCapacity" value="0" />
+      <br />
+      <label for="mediumCapacity">Medium Capacity:</label>
+      <input type="number" id="mediumCapacity" value="0" />
+      <br />
+      <label for="bigCapacity">Big Capacity:</label>
+      <input type="number" id="bigCapacity" value="0" />
+      <br />
+      <button id="updateCapacity">Update Capacity</button>
+    </div>
+    <div class="actions">
+      <button id="packSmall">Pack Small</button>
+      <button id="packMedium">Pack Medium</button>
+      <button id="packBig">Pack Large</button>
+      <button id="unpackSmall">Unpack Small</button>
+      <button id="unpackMedium">Unpack Medium</button>
+      <button id="unpackBig">Unpack Large</button>
+    </div>
+    <div class="results">
+      <h2>Results:</h2>
+      <ul id="resultsList"></ul>
+    </div>
+    <div class="backpack">
+      <h2>Backpack State:</h2>
+      <pre id="backpackState"></pre>
+    </div>
+    <script src="packing-service.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
